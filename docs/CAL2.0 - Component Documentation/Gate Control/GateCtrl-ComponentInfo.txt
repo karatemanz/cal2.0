@@ -1,0 +1,5 @@
+MCP3208 
+- 4 or 8 Channel 
+- 12-bit 
+- Analog to Digital Converter
+- SPI Serial Interface
