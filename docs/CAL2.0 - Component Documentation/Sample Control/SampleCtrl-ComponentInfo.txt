@@ -2,3 +2,8 @@ TB6560
 - 3 Axis Motor Driver
 - Microstepping driver
 - Driven By Arduino
+
+3590S-2-103L
+- Manufacturer: Bourns Mexico
+- Potenitometer
+- Used to detect movement of sample on the strip

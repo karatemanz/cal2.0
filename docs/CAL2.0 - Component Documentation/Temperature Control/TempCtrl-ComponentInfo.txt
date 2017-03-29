@@ -1,10 +1,15 @@
 MCP3208 
-- 4 or 8 Channel 
-- 12-bit 
-- Analog to Digital Converter
-- SPI Serial Interface
+* 4 or 8 Channel 
+* 12-bit 
+* Analog to Digital Converter
+* SPI Serial Interface
 
 T55030C
-- Thermo Scientific Furnace
-- Internal Type K Thermocouple
-- 100 C to 1100 C
+* Thermo Scientific Furnace
+* Internal Type K Thermocouple
+* 100 C to 1100 C
+
+PSG-42N
+* Pyrospot DG (I believe) 42N series
+* IR Sensor (With Red Guide Laser)
+* 250 C - 2500 C
