@@ -1,0 +1,36 @@
+import wx
+import wx.grid as  gridlib
+ 
+class MyGrid(wx.Panel):
+ 
+    def __init__(self, parent):
+
+        wx.Panel.__init__(self, parent=parent, id=wx.ID_ANY, size=(400, 400))
+ 
+        # Add a panel so it looks the correct on all platforms
+        self.grid = gridlib.Grid(self)
+        self.grid.CreateGrid(0, 2)
+ 
+        # change a couple column labels
+        self.grid.SetColLabelValue(0, "Time")
+
+        self.grid.SetColLabelValue(1, "Temperature")
+        self.grid.AutoSizeColumn(1)
+       
+        self.grid.AppendRows(numRows=1)
+
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        sizer.Add(self.grid, 1, wx.EXPAND, 5)
+        self.SetSizer(sizer)
+
+class DemoFrame(wx.Frame):
+    def __init__(self):
+        wx.Frame.__init__(self, None, wx.ID_ANY, "Grid Data Panel")
+        panel = MyGrid(self)
+        self.Show()
+ 
+# Run the program
+if __name__ == "__main__":
+    app = wx.PySimpleApp()
+    frame = DemoFrame()
+    app.MainLoop()
